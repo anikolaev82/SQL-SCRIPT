@@ -1,5 +1,15 @@
-select class_id, id, short_name, name, created, user_created, modified, user_modified, status, result_class_id, flags  type_operation
+select class_id
+      ,short_name
+      ,row_number() over(partition by trunc(modified) order by modified desc) row_num
+      ,name
+      ,modified
+      ,user_modified
+      ,created
+      ,user_created
+      ,status
+      ,result_class_id
+      ,flags  type_operation
 from methods
 where user_modified = 'anikolaev'
-order by modified desc
+order by modified  desc, created desc, row_num
 
