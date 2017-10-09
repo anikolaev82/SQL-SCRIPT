@@ -10,6 +10,6 @@ select class_id
       ,result_class_id
       ,flags  type_operation
 from methods
-where user_modified = 'anikolaev'
+where user_modified = 'user_login'
 order by modified  desc, created desc, row_num
 

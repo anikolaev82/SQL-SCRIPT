@@ -25,9 +25,9 @@ from  methods m
       ) dm
 where m.id = dm.method_id and 
       dm.action = 'COMPILE' and 
-      m.class_id = 'RICHES_BANK' and 
-      m.short_name = 'GPB_RUN_SCHEME' 
-      --and dm.user_modified = 'anikolaev'
+--    m.class_id = 'class_name' and 
+--    m.short_name = 'name_operation' 
+--    and dm.user_modified = 'user_login'
 group by m.class_id
       ,m.short_name
       ,m.name
