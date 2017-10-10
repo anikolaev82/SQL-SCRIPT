@@ -29,7 +29,6 @@ where     t_distr.id = t_doc.id
       and vid_doc.c_type_doc = type_doc.id(+)
       and t_pattern.c_doc#others = t_pattern_rich.id(+)
       and t_pattern.c_doc#others = t_rich.id(+)
---      and t_rich.c_add like '%INKASS%'
-      and t_distr.c_pattern_code = 'NIN_OP' 
+      and t_distr.c_pattern_code = 'CODE_PATTERN_DCO' 
       
      
