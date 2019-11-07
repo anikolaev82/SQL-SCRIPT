@@ -17,5 +17,5 @@ select meth.id
       ,direction
 from methods meth, method_parameters meth_param
 where     meth.id = meth_param.method_id 
---    and meth.short_name = 'short_name_operation'
+--    and meth.short_name = 'short_name_operation '
 
